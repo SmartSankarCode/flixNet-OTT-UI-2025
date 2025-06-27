@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue",
+        "Segoe UI",
+        "Roboto",
+        "Ubuntu",
+        "sans-serif";
+}
+body{
+    background-color: black;
+    width: 100%;
+}
+
+/* --------Header--------- */
+header {
+    height: 98vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav img {
+    height: 40px;
+}
+nav {
+    height: 15vh;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(black, transparent);
+}
+nav button {
+    height: 35px;
+    width: 80px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+nav div {
+    display: flex;
+    gap: 10px;
+}
+nav button:first-child {
+    width: 120px;
+    border: 1px solid rgb(134, 130, 130);
+    background-color: transparent;
+}
+nav button:first-child i {
+    margin-left: 5px;
+}
+nav button:first-child svg{
+    height: 13px;
+    width: 15px;
+    margin: 0px 2px;
+}
+select{
+    background:transparent;
+    color:rgb(255,255,255);
+    border: none;
+    appearance: none;
+}
+select option{
+    color:black;
+}
+nav button:last-child {
+    cursor: pointer;
+    background-color: red;
+    font-weight: 700;
+    font-size: 15px;
+}
+.black-shade {
+    top: 0px;
+    left: 0px;
+    height: 98vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+}
+.header-body {
+    height: 83vh;
+    max-width: 100%;
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+}
+.header-body span:nth-child(1) {
+    font-weight: 900;
+    font-size: 55px;
+    padding: 5px 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.header-body span:nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+.header-body span:nth-child(3) {
+    font-weight: 350;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin: 5px 0px;
+}
+.header-body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header-body div input {
+    height: 50px;
+    border: 1px solid rgb(134, 130, 130);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 330px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #fff;
+}
+.header-body div button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.header-body div button i {
+    margin-left: 15px;
+    font-weight: 600;
+}
+.line {
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    position: relative;
+}
+
+/* -----------------section-------------- */
+.section {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    position: relative; 
+}
+.flex-cards {
+    display: flex;
+    gap: 50px;
+    padding: 20px 0px;
+    overflow-x: scroll;
+    padding-left: 35px;
+}
+.cards {
+    width: 180px;
+    height: 280px;
+    position: relative;
+}
+.cards img {
+    width: 180px;
+    height: 270px;
+    border-radius: 10px;
+}
+.cards span {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    font-size: 80px;
+    font-weight: 800;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    color: black;
+}
+.card-button {
+    position: absolute;
+    right: -35px;
+    top: 130px;
+    z-index: 10;
+}
+.card-button button {
+    height:130px ;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 10px;
+}
+.card-button button svg {
+    color: white;
+}
+.card-button button:hover {
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+.cards:hover {
+    transition: all ease 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.flex-cards::-webkit-scrollbar {
+    appearance: none;
+}
+.grid-boxes{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+}
+.boxes{
+    height: 40vh;
+    max-width: 20vw;
+    display: flex;
+    gap: 15px;
+    padding: 25px 15px;
+    flex-direction: column;
+    border-radius: 10px;
+    background:linear-gradient(to left bottom,#192144,#1b1d3b,#1c1931,#1d172d,#1e1426,#1f1324,#1f1323,#1f111e,#21101c,#210f19,#210e17);
+    position: relative;
+}
+.boxes svg{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.faqs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.faq{
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 0px 20px;
+}
+.faq span{
+    font-size: 25px;
+    font-weight: 400;
+}
+.faq:hover{
+    cursor: pointer;
+    background-color: #444444;
+    transition: all ease-in 0.5s;
+}
+
+/* ------------Footer------------ */
+.footer-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+    gap: 20px;
+}
+.footer-1 div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-1 input{
+    height: 50px;
+    width: 30vw;
+    background-color: transparent;
+    border: 1px solid rgb(97, 92, 92);
+    padding: 0px 20px;
+    border-radius: 4px;
+}
+.footer-1 button{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer-1 i{
+    margin-left: 15px;
+    font-weight: 600;
+}
+.footer-2{
+    width: 80%;
+    margin: 50px auto;
+}
+.grid-footer-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px 0px;
+    
+} 
+.grid-footer-2 ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer-2 a{
+    color:#aaaaaa;
+    font-size:14px;
+}
+.language .selector{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    margin: 20px 0px;
+    border: 1px solid rgb(107, 99, 99);
+    padding: 2px 10px;
+    gap: 10px;
+    border-radius: 5px;
+}
+.footer-2 span p{
+    color:#aaaaaa;
+    font-size:14px;
+    font-weight:500;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
